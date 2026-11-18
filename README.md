@@ -1,8 +1,12 @@
 <div align="center">
 
+<img src="assets/banner.svg" width="100%" alt="Kirill Aliev — full-stack developer">
+
+<br>
+
 <img src="https://avatars.githubusercontent.com/u/234660078?v=4" width="120" alt="Kirill Aliev avatar">
 
-# I'm 𝒦𝒾𝓇𝒾𝓁𝓁 𝒜𝓁𝒾𝑒𝓋
+# I'm Kirill Aliev
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=26&duration=3500&pause=1000&color=39FF14&center=true&vCenter=true&width=650&lines=Full-stack+developer;Building+things+for+the+web;Node.js+%2F+Laravel+%2F+React" alt="Full-stack developer">
 
@@ -36,9 +40,9 @@ I build things for the web — from a CSS framework and browser-based apps to No
 
 <img src="https://skillicons.dev/icons?i=nodejs,express,php,laravel,mysql" alt="Node.js, Express, PHP, Laravel, MySQL" height="40">
 
-**Mobile & Tools**
+**Tools**
 
-<img src="https://skillicons.dev/icons?i=kotlin,androidstudio,git,github,vscode,npm" alt="Kotlin, Android Studio, Git, GitHub, VS Code, npm" height="40">
+<img src="https://skillicons.dev/icons?i=git,github,vscode,npm" alt="Git, GitHub, VS Code, npm" height="40">
 
 ---
 
@@ -86,7 +90,6 @@ End-to-end encrypted chat in the browser: **AES-encrypted** messages stored in G
 
 - 🛡️ [backend](https://github.com/alievkirill307-bot/backend) — auth demo: sessions, bcrypt password hashing, roles and admin panel on Node.js + Express + SQLite
 - 📖 [photon-kit-docs](https://github.com/alievkirill307-bot/photon-kit-docs) — documentation site for the Photon kit
-- ❌⭕ [Tic-Tac-Toe for Android](https://github.com/alievkirill307-bot/Tic-Tac-Toe-for-Android-on-kotlin) — classic game written in Kotlin
 - 🏎️ [Racing-arcade](https://github.com/alievkirill307-bot/Racing-arcade) — HTML5 arcade racing game *(archived)*
 
 ---
@@ -107,12 +110,21 @@ End-to-end encrypted chat in the browser: **AES-encrypted** messages stored in G
 
 ## 📫 Contact
 
-[![Telegram](https://img.shields.io/badge/Telegram-{{telegram_nickname}}-39FF14?style=flat-square&labelColor=0d1117&logo=telegram&logoColor=white)](https://t.me/{{telegram_nickname}})
-[![Email](https://img.shields.io/badge/Email-{{email}}-39FF14?style=flat-square&labelColor=0d1117&logo=gmail&logoColor=white)](mailto:{{email}})
-[![GitHub](https://img.shields.io/badge/GitHub-alievkirill307--bot-39FF14?style=flat-square&labelColor=0d1117&logo=github&logoColor=white)](https://github.com/alievkirill307-bot)
-
 <div align="center">
+
+[![Telegram](https://img.shields.io/badge/Telegram-%40VOVKAIT-39FF14?style=for-the-badge&labelColor=0d1117&logo=telegram&logoColor=white)](https://t.me/VOVKAIT)
+[![Email](https://img.shields.io/badge/Email-alievkirill307%40gmail.com-39FF14?style=for-the-badge&labelColor=0d1117&logo=gmail&logoColor=white)](mailto:alievkirill307@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-alievkirill307--bot-39FF14?style=for-the-badge&labelColor=0d1117&logo=github&logoColor=white)](https://github.com/alievkirill307-bot)
+
+<br>
+
+**Рабочая почта:** [alievkirill307@gmail.com](mailto:alievkirill307@gmail.com)
+**Telegram:** [@VOVKAIT](https://t.me/VOVKAIT)
+
+<br>
 
 <img src="https://komarev.com/ghpvc/?username=alievkirill307-bot&color=39ff14" alt="Profile views">
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:39FF14,100:00E5FF&section=footer&height=90&animation=twinkling" width="100%" alt="footer wave">
