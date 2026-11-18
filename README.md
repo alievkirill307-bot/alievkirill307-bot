@@ -2,7 +2,7 @@
 
 <img src="https://avatars.githubusercontent.com/u/234660078?v=4" width="120" alt="Kirill Aliev avatar">
 
-# I'm Kirill Aliev
+# I'm 𝒦𝒾𝓇𝒾𝓁𝓁 𝒜𝓁𝒾𝑒𝓋
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=26&duration=3500&pause=1000&color=39FF14&center=true&vCenter=true&width=650&lines=Full-stack+developer;Building+things+for+the+web;Node.js+%2F+Laravel+%2F+React" alt="Full-stack developer">
 
