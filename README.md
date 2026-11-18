@@ -12,7 +12,7 @@
 
 <img src="https://avatars.githubusercontent.com/u/234660078?v=4" width="112" alt="Kirill Aliev avatar">
 
-# KIRILL ALIEV
+# 𝒦𝒾𝓇𝒾𝓁𝓁 𝒜𝓁𝒾𝑒𝓋
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3200&pause=900&color=FF2D95&center=true&vCenter=true&width=650&lines=Full-stack+developer;Building+things+for+the+web;Node.js+%2F+Laravel+%2F+React;Welcome+to+Leonida" alt="Full-stack developer">
 
