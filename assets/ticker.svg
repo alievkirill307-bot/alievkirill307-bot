@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54" role="img" aria-label="Scrolling ticker: now playing full-stack developer, open to collaboration, Node.js, Laravel, React, Photon, MusicX, Leonida 2026.">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2D95">
+        <animate attributeName="stop-color" values="#FF2D95;#FF8A3D;#22E0D6;#FF2D95" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#FFC24B"/>
+      <stop offset="1" stop-color="#22E0D6">
+        <animate attributeName="stop-color" values="#22E0D6;#FF2D95;#FF8A3D;#22E0D6" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="fadeLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#08020F" stop-opacity="1"/>
+      <stop offset="1" stop-color="#08020F" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="fadeRight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#08020F" stop-opacity="0"/>
+      <stop offset="1" stop-color="#08020F" stop-opacity="1"/>
+    </linearGradient>
+
+    <clipPath id="tickerClip">
+      <rect x="2" y="2" width="1196" height="50" rx="12" ry="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#tickerClip)">
+    <rect width="1200" height="54" fill="#08020F"/>
+
+    <g font-family="'Fira Code', Consolas, 'Courier New', monospace" font-size="14" letter-spacing="2" fill="#FFF4E0">
+      <g>
+        <text x="0" y="34" textLength="1200" lengthAdjust="spacing"><tspan fill="#FF2D95">★</tspan> NOW PLAYING: FULL-STACK DEVELOPER <tspan fill="#FF2D95">★</tspan> OPEN TO COLLABORATION <tspan fill="#22E0D6">★</tspan> NODE.JS <tspan fill="#22E0D6">★</tspan> LARAVEL <tspan fill="#22E0D6">★</tspan> REACT <tspan fill="#FF8A3D">★</tspan> PHOTON <tspan fill="#FF8A3D">★</tspan> MUSICX <tspan fill="#FF2D95">★</tspan> LEONIDA 2026 </text>
+        <text x="1200" y="34" textLength="1200" lengthAdjust="spacing"><tspan fill="#FF2D95">★</tspan> NOW PLAYING: FULL-STACK DEVELOPER <tspan fill="#FF2D95">★</tspan> OPEN TO COLLABORATION <tspan fill="#22E0D6">★</tspan> NODE.JS <tspan fill="#22E0D6">★</tspan> LARAVEL <tspan fill="#22E0D6">★</tspan> REACT <tspan fill="#FF8A3D">★</tspan> PHOTON <tspan fill="#FF8A3D">★</tspan> MUSICX <tspan fill="#FF2D95">★</tspan> LEONIDA 2026 </text>
+        <animateTransform attributeName="transform" type="translate" values="0 0;-1200 0" dur="30s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <rect x="0" y="0" width="1200" height="2" fill="url(#edge)"/>
+    <rect x="0" y="52" width="1200" height="2" fill="url(#edge)"/>
+
+    <rect x="0" y="0" width="86" height="54" fill="url(#fadeLeft)"/>
+    <rect x="1114" y="0" width="86" height="54" fill="url(#fadeRight)"/>
+  </g>
+
+  <rect x="2" y="2" width="1196" height="50" rx="12" ry="12" fill="none" stroke="url(#edge)" stroke-width="1.5" opacity="0.7"/>
+</svg>
