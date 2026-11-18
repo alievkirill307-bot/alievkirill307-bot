@@ -1,134 +1,241 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Kirill Aliev — full-stack developer">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Kirill Aliev - full-stack developer, Vice City sunset style">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#0a1a10"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#150322"/>
+      <stop offset="0.28" stop-color="#33073F"/>
+      <stop offset="0.52" stop-color="#750A56"/>
+      <stop offset="0.70" stop-color="#C1124F"/>
+      <stop offset="0.84" stop-color="#FF4D6D"/>
+      <stop offset="0.94" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#FFC24B"/>
     </linearGradient>
 
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#39FF14"/>
-      <stop offset="0.45" stop-color="#7CFFB2"/>
-      <stop offset="0.55" stop-color="#00E5FF"/>
-      <stop offset="1" stop-color="#39FF14"/>
-      <animate attributeName="x1" values="-1;1;-1" dur="7s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0;2;0" dur="7s" repeatCount="indefinite"/>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE066"/>
+      <stop offset="0.45" stop-color="#FF9A3D"/>
+      <stop offset="0.78" stop-color="#FF3D7F"/>
+      <stop offset="1" stop-color="#FF2D95"/>
     </linearGradient>
 
-    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#39FF14">
-        <animate attributeName="stop-color" values="#39FF14;#00E5FF;#7C4DFF;#39FF14" dur="9s" repeatCount="indefinite"/>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF7EA"/>
+      <stop offset="0.35" stop-color="#FFD98A"/>
+      <stop offset="0.65" stop-color="#FF8A3D"/>
+      <stop offset="1" stop-color="#FF2D95"/>
+      <animate attributeName="x1" values="-0.4;0.4;-0.4" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0.6;1.6;0.6" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF2D95">
+        <animate attributeName="stop-color" values="#FF2D95;#FF8A3D;#00E5FF;#FF2D95" dur="10s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="0.5" stop-color="#00E5FF">
-        <animate attributeName="stop-color" values="#00E5FF;#7C4DFF;#39FF14;#00E5FF" dur="9s" repeatCount="indefinite"/>
+      <stop offset="0.5" stop-color="#FF8A3D">
+        <animate attributeName="stop-color" values="#FF8A3D;#00E5FF;#FF2D95;#FF8A3D" dur="10s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="1" stop-color="#7C4DFF">
-        <animate attributeName="stop-color" values="#7C4DFF;#39FF14;#00E5FF;#7C4DFF" dur="9s" repeatCount="indefinite"/>
+      <stop offset="1" stop-color="#7A1BFF">
+        <animate attributeName="stop-color" values="#7A1BFF;#FF2D95;#FF8A3D;#7A1BFF" dur="10s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
-    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#39FF14" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A0A3F"/>
+      <stop offset="0.35" stop-color="#1E0529"/>
+      <stop offset="1" stop-color="#0B0114"/>
+    </linearGradient>
+
+    <linearGradient id="mirror" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC24B" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#FF4D8D" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#FF2D95" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="glare" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFF7EA" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFF7EA" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#FFF7EA" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FF6FB5" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#FF2D95" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FF2D95" stop-opacity="0"/>
     </radialGradient>
 
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#39FF14" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
 
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#39FF14" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#39FF14" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#39FF14" stop-opacity="0"/>
-    </linearGradient>
-
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <filter id="neonGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.2" fill="#000000" opacity="0.22"/>
+    </pattern>
+
+    <mask id="sunStripes">
+      <rect x="340" y="60" width="220" height="200" fill="#ffffff"/>
+      <g fill="#000000">
+        <rect x="340" y="150" width="220" height="4">
+          <animate attributeName="y" values="150;144;150" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="340" y="163" width="220" height="6">
+          <animate attributeName="y" values="163;156;163" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="340" y="176" width="220" height="7"/>
+      </g>
+    </mask>
+
     <clipPath id="card">
-      <rect x="3" y="3" width="894" height="214" rx="26" ry="26"/>
+      <rect x="2" y="2" width="896" height="256" rx="22" ry="22"/>
     </clipPath>
+
+    <clipPath id="skyArea">
+      <rect x="0" y="0" width="900" height="176"/>
+    </clipPath>
+
+    <g id="palm" fill="none" stroke="#0A0113" stroke-linecap="round">
+      <path d="M0 0 C 7 -38 5 -78 -2 -120" stroke-width="8"/>
+      <path d="M-2 -120 C -22 -148 -60 -156 -88 -142" stroke-width="6"/>
+      <path d="M-2 -120 C 18 -150 56 -158 86 -144" stroke-width="6"/>
+      <path d="M-2 -120 C -16 -158 -46 -184 -74 -190" stroke-width="5.5"/>
+      <path d="M-2 -120 C 14 -160 44 -186 74 -192" stroke-width="5.5"/>
+      <path d="M-2 -120 C -8 -164 -14 -196 -10 -222" stroke-width="5"/>
+      <path d="M-2 -120 C 6 -166 12 -198 18 -224" stroke-width="5"/>
+      <g fill="#0A0113" stroke="none">
+        <circle cx="-10" cy="-116" r="5"/>
+        <circle cx="6" cy="-114" r="4.5"/>
+      </g>
+    </g>
   </defs>
 
   <g clip-path="url(#card)">
-    <rect width="900" height="220" fill="url(#bg)"/>
-    <rect width="900" height="220" fill="url(#grid)"/>
+    <rect width="900" height="260" fill="#0B0114"/>
 
-    <circle cx="760" cy="110" r="150" fill="url(#halo)">
-      <animate attributeName="r" values="140;170;140" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
-    </circle>
+    <rect width="900" height="176" fill="url(#sky)"/>
 
-    <g stroke="#39FF14" stroke-opacity="0.28" fill="none" stroke-width="1.2">
-      <circle cx="762" cy="110" r="54">
-        <animate attributeName="r" values="48;62;48" dur="5s" repeatCount="indefinite"/>
-        <animate attributeName="stroke-opacity" values="0.35;0.05;0.35" dur="5s" repeatCount="indefinite"/>
+    <g fill="#FFFFFF">
+      <circle cx="120" cy="34" r="1.4" opacity="0.8">
+        <animate attributeName="opacity" values="0.15;0.9;0.15" dur="4s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="762" cy="110" r="82">
-        <animate attributeName="r" values="78;92;78" dur="7s" repeatCount="indefinite"/>
-        <animate attributeName="stroke-opacity" values="0.05;0.3;0.05" dur="7s" repeatCount="indefinite"/>
+      <circle cx="248" cy="58" r="1" opacity="0.6">
+        <animate attributeName="opacity" values="0.7;0.1;0.7" dur="5.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="690" cy="30" r="1.3" opacity="0.7">
+        <animate attributeName="opacity" values="0.9;0.2;0.9" dur="6.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="806" cy="66" r="1" opacity="0.5">
+        <animate attributeName="opacity" values="0.2;0.85;0.2" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="560" cy="22" r="1.1" opacity="0.6">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="3.6s" repeatCount="indefinite"/>
       </circle>
     </g>
 
-    <g filter="url(#glow)">
-      <circle cx="762" cy="110" r="6" fill="#39FF14"/>
-    </g>
-    <g fill="none" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.85">
-      <circle cx="762" cy="110" r="54">
-        <animateMotion dur="6s" repeatCount="indefinite" path="M54,0 A54,54 0 1,1 -54,0 A54,54 0 1,1 54,0"/>
-      </circle>
-      <circle cx="762" cy="110" r="82">
-        <animateMotion dur="11s" repeatCount="indefinite" path="M82,0 A82,82 0 1,0 -82,0 A82,82 0 1,0 82,0"/>
-      </circle>
+    <g clip-path="url(#skyArea)">
+      <ellipse cx="450" cy="180" rx="300" ry="152" fill="url(#sunGlow)">
+        <animate attributeName="rx" values="280;320;280" dur="7s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <g mask="url(#sunStripes)">
+        <circle cx="450" cy="182" r="96" fill="url(#sunGrad)">
+          <animate attributeName="r" values="94;98;94" dur="9s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+
+      <rect x="0" y="168" width="900" height="8" fill="#FFC24B" opacity="0.55" filter="url(#soft)"/>
     </g>
 
-    <g fill="#39FF14" opacity="0.75">
-      <circle cx="90" cy="176" r="2.6">
-        <animate attributeName="cy" values="176;164;176" dur="4.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.2;0.9;0.2" dur="4.4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="132" cy="188" r="2">
-        <animate attributeName="cy" values="188;172;188" dur="5.6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.9;0.25;0.9" dur="5.6s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="176" cy="170" r="2.2">
-        <animate attributeName="cy" values="170;154;170" dur="6.4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.3;0.85;0.3" dur="6.4s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="228" cy="184" r="1.8">
-        <animate attributeName="cy" values="184;168;184" dur="5s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.7;0.15;0.7" dur="5s" repeatCount="indefinite"/>
-      </circle>
+    <rect x="0" y="176" width="900" height="84" fill="url(#water)"/>
+
+    <path d="M404 176 L496 176 L468 258 L432 258 Z" fill="url(#mirror)" opacity="0.75">
+      <animate attributeName="opacity" values="0.55;0.85;0.55" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <ellipse cx="450" cy="206" rx="76" ry="42" fill="url(#mirror)" filter="url(#soft)">
+      <animate attributeName="rx" values="66;92;66" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <g stroke="#FFB0D0" stroke-linecap="round" opacity="0.8">
+      <line x1="330" y1="190" x2="378" y2="190" stroke-width="2">
+        <animate attributeName="opacity" values="0.15;0.75;0.15" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="x1" values="326;338;326" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="374;386;374" dur="4s" repeatCount="indefinite"/>
+      </line>
+      <line x1="500" y1="198" x2="556" y2="198" stroke-width="2.4">
+        <animate attributeName="opacity" values="0.7;0.2;0.7" dur="5.2s" repeatCount="indefinite"/>
+        <animate attributeName="x1" values="496;510;496" dur="5.2s" repeatCount="indefinite"/>
+        <animate attributeName="x2" values="552;566;552" dur="5.2s" repeatCount="indefinite"/>
+      </line>
+      <line x1="392" y1="210" x2="432" y2="210" stroke-width="1.8">
+        <animate attributeName="opacity" values="0.25;0.8;0.25" dur="4.6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="470" y1="222" x2="530" y2="222" stroke-width="2">
+        <animate attributeName="opacity" values="0.6;0.15;0.6" dur="6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="360" y1="236" x2="420" y2="236" stroke-width="1.6">
+        <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="486" y1="246" x2="536" y2="246" stroke-width="1.6">
+        <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4.2s" repeatCount="indefinite"/>
+      </line>
     </g>
 
-    <rect x="-320" y="0" width="320" height="220" fill="url(#sweep)" transform="skewX(-18)">
-      <animate attributeName="x" values="-320;980" dur="9s" repeatCount="indefinite"/>
+    <g stroke="#FF2D95" stroke-width="1" opacity="0.16">
+      <line x1="450" y1="176" x2="0" y2="260"/>
+      <line x1="450" y1="176" x2="180" y2="260"/>
+      <line x1="450" y1="176" x2="360" y2="260"/>
+      <line x1="450" y1="176" x2="540" y2="260"/>
+      <line x1="450" y1="176" x2="720" y2="260"/>
+      <line x1="450" y1="176" x2="900" y2="260"/>
+      <line x1="0" y1="200" x2="900" y2="200" opacity="0.7"/>
+      <line x1="0" y1="216" x2="900" y2="216" opacity="0.5"/>
+      <line x1="0" y1="234" x2="900" y2="234" opacity="0.35"/>
+    </g>
+
+    <use href="#palm" transform="translate(96 178) scale(0.78)"/>
+    <use href="#palm" transform="translate(806 178) scale(0.72) scale(-1 1)"/>
+    <use href="#palm" transform="translate(20 184) scale(0.44)"/>
+    <use href="#palm" transform="translate(884 184) scale(0.4) scale(-1 1)"/>
+
+    <g font-family="Impact, 'Arial Black', Haettenschweiler, sans-serif" text-anchor="middle">
+      <text x="452" y="104" font-size="62" letter-spacing="3" fill="#00E5FF" opacity="0.30" transform="translate(-2.5 0)">
+        KIRILL ALIEV
+        <animate attributeName="opacity" values="0.3;0.1;0.3" dur="7s" repeatCount="indefinite"/>
+      </text>
+      <text x="452" y="104" font-size="62" letter-spacing="3" fill="#FF2D95" opacity="0.45" transform="translate(2.5 0)">
+        KIRILL ALIEV
+      </text>
+      <text x="452" y="104" font-size="62" letter-spacing="3" fill="url(#titleGrad)" stroke="#1A031F" stroke-width="4" paint-order="stroke">
+        KIRILL ALIEV
+      </text>
+      <text x="452" y="104" font-size="62" letter-spacing="3" fill="#FFF7EA" opacity="0.18" filter="url(#neonGlow)">
+        KIRILL ALIEV
+      </text>
+    </g>
+
+    <g font-family="'Fira Code', Consolas, 'Courier New', monospace" text-anchor="middle">
+      <text x="450" y="132" font-size="13" letter-spacing="6" fill="#FFF3E0" stroke="#1A031F" stroke-width="3" paint-order="stroke" opacity="0.95">
+        FULL-STACK DEVELOPER
+        <animate attributeName="opacity" values="0.92;0.55;0.92" dur="6s" repeatCount="indefinite"/>
+      </text>
+      <text x="450" y="28" font-size="11" letter-spacing="4" fill="#FF9AC4" opacity="0.85">
+        // NODE.JS / LARAVEL / REACT //
+      </text>
+    </g>
+
+    <rect x="-260" y="70" width="240" height="180" fill="url(#glare)" opacity="0.35" transform="skewX(-20)">
+      <animate attributeName="x" values="-280;960" dur="11s" repeatCount="indefinite"/>
     </rect>
 
-    <g font-family="'Fira Code','JetBrains Mono',Consolas,'Courier New',monospace" fill="#c9d1d9">
-      <text x="64" y="86" font-size="13" letter-spacing="4" fill="#39FF14" opacity="0.85">&lt;hello world /&gt;</text>
-
-      <text x="64" y="146" font-size="46" font-weight="700" fill="url(#shine)" letter-spacing="1">
-        KIRILL ALIEV
-        <animate attributeName="opacity" values="1;0.82;1" dur="5s" repeatCount="indefinite"/>
-      </text>
-
-      <text x="64" y="182" font-size="15" fill="#8b949e" letter-spacing="1.5">
-        full-stack developer · Node.js · Laravel · React
-        <animate attributeName="fill" values="#8b949e;#b8c2cc;#8b949e" dur="6s" repeatCount="indefinite"/>
-      </text>
-    </g>
-
-    <g fill="#39FF14" opacity="0.55">
-      <rect x="64" y="54" width="34" height="3" rx="1.5">
-        <animate attributeName="width" values="34;58;34" dur="4s" repeatCount="indefinite"/>
-      </rect>
-    </g>
+    <rect width="900" height="260" fill="url(#scan)" opacity="0.5"/>
+    <rect width="900" height="260" fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="24" filter="url(#soft)"/>
   </g>
 
-  <rect x="3" y="3" width="894" height="214" rx="26" ry="26" fill="none" stroke="url(#border)" stroke-width="2"/>
+  <rect x="2" y="2" width="896" height="256" rx="22" ry="22" fill="none" stroke="url(#frame)" stroke-width="2.5"/>
 </svg>
